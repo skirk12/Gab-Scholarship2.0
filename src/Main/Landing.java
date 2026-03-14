@@ -121,14 +121,14 @@ public class Landing extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Created By GAB The Great   Email  GABRIEL@email.com   ©2026 The Lost And Found System ");
+        jLabel10.setText("Created By GAB The Great   Email  GABRIEL@email.com   ©2026 The Scholarship System ");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(187, Short.MAX_VALUE)
+                .addContainerGap(213, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addGap(96, 96, 96))
         );

@@ -45,7 +45,7 @@ void displayUser(){
 
     config cn = new config();
     // I have ensured this points ONLY to tbl_student
-    String sql = "SELECT item_id, item_name, item_time, item_location, item_type, reported_by, item_status FROM tbl_items";
+    String sql = "SELECT student_id, scholarship_name, applied_date, scholarship_type, s_status reported_by, FROM tbl_user";
     cn.displayData(sql, usertable);
 }
 
@@ -54,7 +54,7 @@ private void SearchTextKeyReleased(java.awt.event.KeyEvent evt) {
     String keyword = SearchText.getText().trim();
     
     // Fixed: removed the extra "item" word that was causing a syntax error in your SQL
-    String sql = "SELECT item_id, item_name, item_time, item_location, item_type, reported_by, item_status FROM tbl_items " +
+    String sql = "SELECT student_id, scholarship_name, applied_date, scholarship_type, s_type, reported_by, item_status FROM tbl_user" +
                  "WHERE item_name LIKE '%" + keyword + "%' " +
                  "OR item_location LIKE '%" + keyword + "%' " +
                  "OR item_status LIKE '%" + keyword + "%'";

@@ -56,8 +56,6 @@ public class EditProfile extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         Settings = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        Reports = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         firstname = new javax.swing.JTextField();
         lastname = new javax.swing.JTextField();
@@ -86,11 +84,11 @@ public class EditProfile extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 130));
 
-        jPanel3.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Users.setBackground(new java.awt.Color(102, 102, 102));
+        Users.setBackground(new java.awt.Color(0, 153, 153));
         Users.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 UsersMouseClicked(evt);
@@ -123,9 +121,9 @@ public class EditProfile extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel3.add(Users, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 80, 250, 80));
+        jPanel3.add(Users, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, 250, 80));
 
-        Home.setBackground(new java.awt.Color(102, 153, 255));
+        Home.setBackground(new java.awt.Color(0, 153, 153));
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 HomeMouseClicked(evt);
@@ -160,7 +158,7 @@ public class EditProfile extends javax.swing.JFrame {
 
         jPanel3.add(Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 240, -1));
 
-        Settings.setBackground(new java.awt.Color(102, 102, 102));
+        Settings.setBackground(new java.awt.Color(0, 153, 153));
         Settings.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 SettingsMouseEntered(evt);
@@ -191,38 +189,6 @@ public class EditProfile extends javax.swing.JFrame {
         );
 
         jPanel3.add(Settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 80, 250, -1));
-
-        Reports.setBackground(new java.awt.Color(102, 102, 102));
-        Reports.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ReportsMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ReportsMouseExited(evt);
-            }
-        });
-
-        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Reports");
-
-        javax.swing.GroupLayout ReportsLayout = new javax.swing.GroupLayout(Reports);
-        Reports.setLayout(ReportsLayout);
-        ReportsLayout.setHorizontalGroup(
-            ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReportsLayout.createSequentialGroup()
-                .addGap(76, 76, 76)
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
-                .addGap(89, 89, 89))
-        );
-        ReportsLayout.setVerticalGroup(
-            ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReportsLayout.createSequentialGroup()
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 22, Short.MAX_VALUE))
-        );
-
-        jPanel3.add(Reports, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 80, 250, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 990, 160));
 
@@ -333,14 +299,6 @@ public class EditProfile extends javax.swing.JFrame {
         resetColor(Settings);
     }//GEN-LAST:event_SettingsMouseExited
 
-    private void ReportsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReportsMouseEntered
-        setColor(Reports);
-    }//GEN-LAST:event_ReportsMouseEntered
-
-    private void ReportsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReportsMouseExited
-        resetColor(Reports);
-    }//GEN-LAST:event_ReportsMouseExited
-
     private void addUMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addUMouseClicked
                                         
                                            
@@ -389,7 +347,6 @@ public class EditProfile extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Email;
     private javax.swing.JPanel Home;
-    private javax.swing.JPanel Reports;
     private javax.swing.JPanel Settings;
     private javax.swing.JTextField Type;
     private javax.swing.JPanel Users;
@@ -404,7 +361,6 @@ public class EditProfile extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
